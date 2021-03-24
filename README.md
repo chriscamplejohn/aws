@@ -27,7 +27,7 @@ Replace the following as appropriate
 
 You can also change the default output from json if you prefer.
 
-In your AWS credentials file, setup your MFA details by addding the following to your default profile
+In your AWS credentials file (%USERPROFILE%\.aws\credentials on Windows and ~/.aws/credentials on macOS), setup your MFA details by addding the following to your default profile
 
 ```
 aws_mfa_secret = my_mfa_secret
