@@ -79,9 +79,9 @@ if args.token is None:
 if args.duration is None:
     args.duration = get_option(cfg, 'profile ' + args.profile, 'aws_token_duration')
 
-    # Default to max of 12 hours if not specified anywhere
+    # Default to max of 1 hour if not specified anywhere (this is the default for new AWS accounts, so minimises issues when setting up with a new account)
     if args.duration is None:
-        args.duration = '43200'
+        args.duration = '3600'
 
 assume_account = cfg['profile ' + args.profile]['account']
 assume_role = cfg['profile ' + args.profile]['role']
