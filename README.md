@@ -56,5 +56,5 @@ macOS:
 Docker:
 
 ```bash
-docker run -v ~/.aws:/root/.aws tote/aws-assume-role --profile test
+docker run -v ~/.aws:/root/.aws thetote/aws-assume-role --profile test
 ```
