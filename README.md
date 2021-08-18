@@ -43,12 +43,18 @@ Replace the following as appropriate
 To login to your default AWS account using MFA, then assume the role in the account for the profile named test that we setup above you can run
 
 Windows:
-```
+```bash
 python aws-assume-role --profile test
 ```
 
 macOS:
 
-```
+```bash
 ./aws-assume-role --profile test
+```
+
+Docker:
+
+```bash
+docker run -v ~/.aws:/root/.aws thetote/aws-assume-role --profile test
 ```
